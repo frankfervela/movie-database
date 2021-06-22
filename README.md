@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##Creating the Officer Web App
 
-## Getting Started
+In this document I will outline every step taken to complete this hulu clone. This demi is designed mobile first
 
-First, run the development server:
+##Technologies Used
+- React.js 
+- Next.js
+- TailwindCSS
+- AWS Amplify
+- IMDB Database Rest API
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+##Steps to set up a Next app with TailwindCSS
+- Create next app: `npx create-next-app {nameOfProject}`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Add the dependencies with yarn. Make sure you erase the package.json file. Then press yarn to convert the package manager settings to yarn. Then run
+`yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Replace the purge key in the file `tailwind.config.js` to `purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}']`
+- Remove from `styles` all files but `global.css` and replace the file's content with 
+  - `@tailwind base;`
+  - `@tailwind components;`
+  - `@tailwind utilities;`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- If you don't have already a `next.config.js` file, create one and add the configuration that allows the lazy loading of the images to work correctly.
+  `images: {
+  domains: ["media-exp1.licdn.com"]
+  }`
+This will allow the use of `<Image />` tags to be used in our app
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    
+- In the `index.js` file. remove all the boilerplate code, including the import to the old css modules from `styles` folder and the class names added to the different html tags.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
