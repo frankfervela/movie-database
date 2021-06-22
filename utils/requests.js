@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEYS; //Holds the API key stored in the environment variable
+const API_KEY = process.env.API_KEY; //Holds the API key stored in the environment variable
 
 
 export default {
