@@ -1,8 +1,6 @@
 import React from 'react';
 import ResultDetail from "../Components/ResultDetail";
 import Layout from "../Components/Layout";
-import requests from "../utils/requests";
-
 
 
 export default function Details({movieResult}) {
@@ -21,7 +19,6 @@ export async function getServerSideProps(context) {
     const genre = context.query.genre;
     const request = await fetch(`https://api.themoviedb.org/3/${genre}/${movieId}?api_key=591bcca26b2c81aed2a2153c1ff84a96&language=en-US`)
         .then((res) => res.json());
-
 
     return {
         props: {

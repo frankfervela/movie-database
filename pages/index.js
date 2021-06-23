@@ -1,5 +1,3 @@
-import Header from "../Components/Header";
-import NavBar from "../Components/NavBar";
 import Results from "../Components/Results";
 import requests from "../utils/requests";
 import Layout from "/Components/Layout";
