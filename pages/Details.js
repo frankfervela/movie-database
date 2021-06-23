@@ -22,14 +22,7 @@ export async function getServerSideProps(context) {
     const request = await fetch(`https://api.themoviedb.org/3/${genre}/${movieId}?api_key=591bcca26b2c81aed2a2153c1ff84a96&language=en-US`)
         .then((res) => res.json());
 
-    console.log(request)
 
-    /*https://api.themoviedb.org/3/movie/{movie_id}?api_key=591bcca26b2c81aed2a2153c1ff84a96&language=en-US*/
-   /* const res = await fetch(`https://api.themoviedb.org/3/${movieGenre}/${movieID}?api_key=${API_KEY}&language=en-US`)
-    const {results} = await res.json();
-
-    console.log(results.results)
-*/
     return {
         props: {
             movieResult: request || null,

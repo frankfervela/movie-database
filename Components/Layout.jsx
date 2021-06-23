@@ -1,7 +1,6 @@
 import Head from "next/Head";
 import Header from "./Header";
 import NavBar from "./NavBar";
-import Footer from "./Footer";
 
 function Layout({title, children}) {
     return (
