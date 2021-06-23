@@ -1,16 +1,10 @@
 ## About
-
-In this document I will outline every step taken to complete this movie database. This demo is designed mobile first
-
+This demo application was made to be part of my portfolio's pojects and for future reference
 ## Technologies Used
 - React.js 
 - Next.js
 - TailwindCSS
 - MoviesDB Rest API
-
-## About
-This application can Search for a specific record (movie or tv show) and display the results in real time.
-This functionality is still under development
 
 ## Capabilities
 - Server side rendering
