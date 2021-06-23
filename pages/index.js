@@ -2,7 +2,7 @@ import Results from "../Components/Results";
 import requests from "../utils/requests";
 import Layout from "/Components/Layout";
 
-export default function Home({ results }) {
+const Home = ({ results }) => {
 
   return (
     <Layout title={"Home"}>
@@ -10,6 +10,8 @@ export default function Home({ results }) {
     </Layout>
   )
 }
+
+export default Home;
 
 export async function getServerSideProps(context) {
   const genre = context.query.genre;

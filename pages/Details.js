@@ -3,7 +3,7 @@ import ResultDetail from "../Components/ResultDetail";
 import Layout from "../Components/Layout";
 
 
-export default function Details({movieResult}) {
+const Details = ({movieResult}) => {
 
     return (
         <Layout title={movieResult.title}>
@@ -11,6 +11,8 @@ export default function Details({movieResult}) {
         </Layout>
     );
 }
+
+export default Details;
 
 /*Call the movie information*/
 export async function getServerSideProps(context) {

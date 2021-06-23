@@ -4,7 +4,7 @@ import {ThumbUpIcon} from "@heroicons/react/solid";
 import requests from "../utils/requests";
 import {useRouter} from "next/router";
 
-export default function Thumbnail({ result }) {
+const Thumbnail = ({ result })  => {
 
     const router = useRouter();
 
@@ -27,6 +27,8 @@ export default function Thumbnail({ result }) {
         </div>
     );
 }
+
+export default Thumbnail;
 
 export async function getServerSideProps(context) {
     const genre = context.props.result;
