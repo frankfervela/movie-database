@@ -1,4 +1,4 @@
-## Creating the Officer Web App
+## About
 
 In this document I will outline every step taken to complete this movie database. This demo is designed mobile first
 
