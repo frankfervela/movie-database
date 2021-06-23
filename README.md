@@ -27,6 +27,9 @@ This functionality is still under development
 ## Captures
 ### Home Page
 ![HomePage](https://user-images.githubusercontent.com/18430092/123140099-e9b81a80-d424-11eb-8276-77aae274a632.png)
+
+### Detail's Page
 ![image](https://user-images.githubusercontent.com/18430092/123140199-02c0cb80-d425-11eb-96f0-342d12984b0a.png)
+
+### Responsive UI
 ![Screenshot 2021-06-23 at 13-17-47 Home](https://user-images.githubusercontent.com/18430092/123140578-719e2480-d425-11eb-9762-3af301bffc1a.png)
-![Screenshot 2021-06-23 at 13-15-39 Home](https://user-images.githubusercontent.com/18430092/123140583-7367e800-d425-11eb-9072-aa3e038fb6ee.png)
